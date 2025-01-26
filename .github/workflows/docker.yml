@@ -22,6 +22,7 @@ env:
 
 jobs:
   release-docker:
+    if: github.repository == 'TabbyML/tabby'
     runs-on: buildjet-2vcpu-ubuntu-2204
     permissions:
       contents: read
